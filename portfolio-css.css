@@ -1,0 +1,757 @@
+body {
+  margin: 0; /* Remove default margins */
+  height: 100vh; /* Make the body cover the full viewport height */
+  background-image: linear-gradient(0deg, #efe1dd 1px, transparent 1px),
+    linear-gradient(90deg, #efe1dd 1px, transparent 1px);
+  background-size: 30px 30px; /* Size of each grid cell */
+  background-color: white;
+  background-color: #f2ebe1;
+}
+
+header {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  background-color: transparent;
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); */
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Brand (Name) Styling */
+.navbar-brand a {
+  top: 6px;
+  color: #175197;
+  font-family: "Spicy Rice", serif;
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 10px 40px;
+  background-color: #ffcc00; /* Slate background color */
+  border-radius: 10px; /* Rounded corners for the slate */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Slight shadow to give a hanging effect */
+  display: inline-block;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* Slate Hanging Effect (Chain) */
+.navbar-brand a::before {
+  content: "";
+  position: absolute;
+  top: -25px; /* Positioning the chain above the slate */
+  left: 40%;
+  transform: rotate(45deg) translateX(-50%);
+  width: 2px;
+  height: 40px;
+  background-color: #333; /* Chain color */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Slight shadow to make the chain look real */
+}
+
+/* Another Slate Hanging Effect (Slanted towards the other side) */
+.navbar-brand a::after {
+  content: "";
+  position: absolute;
+  top: -39px; /* Position above the slate, adjust as needed */
+  left: 50%;
+  transform: rotate(135deg) translateY(-50%); /* Slanted towards the other side */
+  width: 2px;
+  height: 40px;
+  background-color: #333; /* Chain color */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Slight shadow to make the chain look real */
+}
+
+/* Adding a small hover effect to make it look interactive */
+.navbar-brand a:hover {
+  transform: translateY(-3px); /* A subtle upward motion for interaction */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* More pronounced shadow on hover */
+}
+
+/* Menu styling */
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li {
+  margin-left: 10px;
+}
+
+.navbar-menu li a {
+  color: #175197;
+  text-decoration: none;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Spicy Rice", serif;
+  font-size: 1.5rem;
+  /* font-weight: regular; */
+  /* padding: 0.5rem 1rem; */
+  transition: color 0.3s, transform 0.2s;
+}
+
+.navbar-menu li a:hover {
+  color: #0db4b9;
+  transform: scale(1.1);
+}
+
+.navbar-menu li a:active {
+  color: #ff5a5f;
+}
+
+/* Hero Section */
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f2ebe1; /* Dark background */
+  color: #fff;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  background-position: top left;
+}
+
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(0deg, #efe1dd 1px, transparent 1px),
+    linear-gradient(90deg, #efe1dd 1px, transparent 1px);
+  background-size: 30px 30px; /* Size of each grid cell */
+  /* border-radius: 0 0 50% 50%; */
+
+  z-index: 0;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #175197; /* Highlight color */
+}
+
+/* .portfolio {
+  width: 500px;
+  height: 500px;
+} */
+
+.hero-content .h1-top {
+  font-size: 12rem;
+  text-align: start;
+  width: 500px;
+  font-family: "Spicy Rice", serif;
+  /* font-family: "Caprasimo", serif; */
+  /* font-weight: 400;
+  font-style: normal; */
+  color: #175197;
+  position: relative;
+  top: -150px;
+  left: 80px;
+  z-index: 2;
+}
+
+.hero-content .h1-bottom {
+  position: relative;
+  top: 40px;
+  right: 80px;
+  font-size: 12rem;
+  text-align: start;
+  width: 500px;
+  font-family: "Spicy Rice", serif;
+  /* font-family: "Caprasimo", serif; */
+  color: #175197;
+  /* max-width: 600px; */
+  /* margin: 50px auto; */
+  margin-top: 100px;
+  z-index: 1;
+}
+
+#top-flower-container {
+  position: absolute;
+  top: 58%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  transition: transform 2s ease-in-out;
+}
+#bottom-flower-container {
+  position: absolute;
+  top: 20%;
+  left: 23%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.petal {
+  animation: spin 5s linear infinite; /* Smooth spin animation */
+  transform-origin: center; /* Keep it spinning in one place */
+}
+
+/* @keyframes rotateFlower {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+.circle {
+  background: #edc442;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.triangle {
+  margin-top: -10px;
+  width: 0;
+  height: 0;
+  border-top: 40px solid #edc442;
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+}
+
+.petal {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform-origin: center 60px;
+  /* margin-bottom: 80px; */
+}
+
+.petal:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.petal:nth-child(2) {
+  transform: rotate(65deg);
+}
+
+.petal:nth-child(2) {
+  transform: rotate(90deg);
+}
+
+.petal:nth-child(3) {
+  transform: rotate(135deg);
+}
+
+.petal:nth-child(5) {
+  transform: rotate(180deg);
+}
+
+.petal:nth-child(6) {
+  transform: rotate(225deg);
+}
+
+.petal:nth-child(7) {
+  transform: rotate(270deg);
+}
+
+.petal:nth-child(8) {
+  transform: rotate(315deg);
+}
+
+.petal:nth-child(9) {
+  transform: rotate(360deg);
+}
+
+#top-flower-container .circle {
+  background: #f28db2; /* Light pink color */
+}
+
+#top-flower-container .triangle {
+  border-top-color: #f28db2; /* Light pink color for triangle */
+}
+
+span {
+  opacity: 0;
+}
+
+#projects {
+  margin: 2rem;
+  padding: 2rem;
+}
+
+.projects-container {
+  /* background-color: pink; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+}
+
+.project-card {
+  position: absolute;
+  /* position: relative; remove later */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: grab;
+  width: 250px;
+  height: 350px;
+  background-color: white;
+  border: 2px solid black;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  text-align: center;
+  font-family: "Spicy Rice", serif;
+  color: #175197;
+  letter-spacing: 2px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#card-1 {
+  transform: rotate(-5deg);
+  top: 10px;
+  left: 10px;
+}
+
+#card-2 {
+  transform: rotate(15deg);
+  top: 10px;
+  left: 10px;
+}
+
+#card-3 {
+  transform: rotate(-15deg);
+  top: 20px;
+  left: 20px;
+}
+
+.project-1 {
+  /* position: relative; */
+  /* position: absolute; remove later*/
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  background-color: #ebe5c9;
+  font-family: "Pangolin", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.project-1:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  background: radial-gradient(#575450 6px, transparent 7px) repeat-y;
+  background-size: 30px 30px;
+  border-right: 3px solid #a9241b;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+.list-content {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  bottom: 30px;
+  left: 0;
+  background: linear-gradient(transparent, transparent 28px, #c0b490 28px);
+  background-size: 30px 30px;
+}
+
+.list-content .text {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  line-height: 30px;
+  padding: 6px 38px;
+  text-align: left;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  /* color: mediumblue; */
+  /* font-family: "Handlee", cursive; */
+  font-weight: lighter;
+  font-size: 16px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+/* .project-1 .card-title {
+  margin-bottom: 20px;
+} */
+
+.project-2 {
+  background-color: whitesmoke;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.project-2 .card-image {
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-image: url(music-player.png);
+  background-size: contain;
+  background-position: center;
+}
+
+.heart-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 200px;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+  font-size: medium;
+}
+
+.heart {
+  margin-top: 3px;
+}
+
+.player-icons {
+  position: relative;
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.player-icons::before {
+  content: "";
+  position: absolute;
+  top: -80%;
+  width: 200px;
+  height: 2px;
+  background-color: black;
+}
+
+.player-icons::after {
+  content: "";
+  position: absolute;
+  top: -91%;
+  left: 20%;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.project-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-3 .card-image {
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.project-3 h3 {
+  margin-top: 20px;
+}
+
+.paper-clip {
+  position: absolute;
+  left: 40%;
+  top: -32px;
+  width: 60px;
+  height: 60px;
+  z-index: 1;
+}
+
+.skills {
+  position: relative;
+  top: 0;
+  left: 50%;
+  width: 300px;
+  height: 500px;
+  background-color: white;
+  /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 -4px 8px rgba(0, 0, 0, 0.05);
+  margin: 0;
+}
+
+.skills h2 {
+  margin: 0;
+  padding: 0;
+}
+.receipt-top {
+  position: absolute;
+  top: -26px;
+  width: 300px;
+  height: 30px;
+  margin-bottom: 100px;
+  background: linear-gradient(-45deg, white 12px, transparent 5%),
+    linear-gradient(45deg, white 12px, transparent 0%);
+  background-size: 24px;
+  margin: 0;
+}
+
+.receipt-bottom {
+  position: absolute;
+  bottom: -26px;
+  width: 300px;
+  height: 30px;
+  background: linear-gradient(-135deg, white 12px, transparent 5%),
+    linear-gradient(135deg, white 12px, transparent 0%);
+  background-size: 24px;
+  margin: 0;
+}
+
+.skills::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: -15px;
+  left: -15px;
+  background-color: #fde26b;
+  background-image: linear-gradient(0deg, #f8b157 1px, transparent 1px),
+    linear-gradient(90deg, #f8b157 1px, transparent 1px);
+  background-size: 20px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: -1;
+}
+
+.skills::after {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 200px;
+  top: 15px;
+  left: -10px;
+  background-color: #f8b9c4;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: -2;
+}
+
+/* .skills::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 24px;
+  background: linear-gradient(-135deg, white 12px, transparent 5%),
+    linear-gradient(135deg, white 12px, transparent 0%);
+  background-size: 24px;
+}
+
+.skills::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 24px;
+  background: linear-gradient(-45deg, white 12px, transparent 0%),
+    linear-gradient(45deg, white 12px, transparent 0%);
+  background-size: 24px;
+} */
+
+/* .sticker {
+  width: 500px; 
+   position: absolute;
+  margin-top: -150px;
+  align-self: center;
+  z-index: 2;
+} */
+
+/* #projects h2 {
+  padding: 30px;
+  margin-bottom: 30px;
+  font-family: "Spicy Rice", serif;
+  font-size: 1.5rem;
+  color: #175197;
+  text-align: center;
+  z-index: 2;
+} */
+
+/* .grid-container {
+  margin: 0;
+  padding: 0;
+}
+
+.grid-container {
+  height: 30px;
+  background-color: #f2ebe1;
+  background-image: linear-gradient(0deg, #efe1dd 1px, transparent 1px),
+    linear-gradient(90deg, #efe1dd 1px, transparent 1px);
+  background-size: 30px 30px;
+} */
+
+/* .box {
+  margin: 0;
+  padding: 0;
+  --size: 14px;
+  height: 30px;
+
+  background: radial-gradient(var(--size) at 50% 0px, #0000 99%, #f8bdbe 101%)
+    50% var(--size) / calc(2 * var(--size)) 100% no-repeat;
+}
+
+.box {
+  background-repeat: repeat-x;
+} */
+
+/* .project-2 {
+  width: 300px;
+  height: 260px;
+  border: none;
+  background-image: linear-gradient(
+    0deg,
+    rgba(247, 247, 247, 1) 23.8%,
+    rgba(252, 221, 221, 1) 92%
+  );
+  color: #4e7dc0;
+} */
+
+/* .project-2 .card-image {
+  margin: 0;
+  position: relative;
+
+  width: 260px;
+  height: 130px;
+  border: 2px solid white;
+  border-radius: 8px;
+  overflow: hidden;
+}  */
+
+/* .card-image .music-player {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
+/* .project-2 .card-title {
+  margin-top: 10px;
+  padding: 0;
+}
+
+/* .project-card::before {
+  content: "";
+  position: absolute;
+  top: -18px;
+  left: 5%;
+  transform: rotate(45deg) translateX(-50%);
+  width: 20px;
+  height: 80px;
+  background-color: #333;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.project-card::after {
+  content: "";
+  position: absolute;
+  top: -18px;
+  right: 5%;
+  transform: rotate(135deg) translateX(-50%);
+  width: 20px;
+  height: 80px;
+  background-color: #333;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+} */
+
+/* .project-1 {
+  background-color: #ddecc5;
+  border: 2px solid #ddecc5;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+} */
+
+/* .project-card::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #b4d3ff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  transform: translateX(-50%);
+  z-index: 1;
+} */
+
+/*
+.project-card:hover {
+  transform: translate(-5px, -5px);
+  box-shadow: 8px 8px 0 #000;
+}
+
+.to-do-list {
+  position: relative;
+  width: 300px;
+  height: 450px;
+  box-shadow: -8px -8px 0 #f8cb44, -8px -8px 0px 2px black,
+    -16px -16px 0 #f37777, -16px -16px 0 2px black, -24px -24px 0 #7ea5ec,
+    -24px -24px 0 2px black, inset 3px 3px 6px rgba(255, 255, 255, 0.5);
+  background-color: white;
+  border-radius: 15px;
+}
+
+.to-do-list-image {
+  position: absolute;
+  top: 20px;
+  left: 22px;
+  width: 250px;
+  height: 200px;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+.application {
+  width: 500px;
+  height: 300px;
+  background-color: white;
+}
+
+.notes {
+  background-color: #f9f7c4;
+}
+
+.my-project {
+  background-color: #ffddd2;
+}
+
+.good-luck {
+  background-color: #ffd700;
+} */
+
+/* #skills {
+  background-color: pink;
+} */
