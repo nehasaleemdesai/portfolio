@@ -47,3 +47,14 @@ projectCards.forEach((card) => {
     document.addEventListener("mouseup", stopDrag);
   }
 });
+
+// display date on receipt
+const currentDate = new Date();
+const day = currentDate.toLocaleString("en-US", { weekday: "long" });
+const month = currentDate.toLocaleString("en-US", { month: "long" });
+const date = currentDate.getDate();
+const year = currentDate.getFullYear();
+
+document.getElementById(
+  "datetime"
+).innerHTML = `${day}, ${month}, ${date}, ${year}`;

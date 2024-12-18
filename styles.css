@@ -308,8 +308,9 @@ span {
 }
 
 .project-card {
-  position: absolute;
-  /* position: relative; remove later */
+  /* position: absolute; */
+  /* remove later down one */
+  /* position: relative; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -500,24 +501,159 @@ h3 {
   left: 50%;
   width: 300px;
   height: 500px;
-  background-color: white;
+  font-family: "Courier Prime", serif;
+  background-color: #f7f7f7;
   /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 -4px 8px rgba(0, 0, 0, 0.05);
   margin: 0;
 }
 
 .skills h2 {
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  padding: 30px;
+  padding-bottom: 0px;
+  margin-bottom: 0;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.skills p {
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 0;
+  font-size: 0.9rem;
+}
+
+.skills p:nth-of-type(2) {
+  text-align: left;
+  font-weight: 700;
+  font-size: x-small;
+  padding-left: 20px;
+  margin-bottom: 0px;
+}
+
+.skills p:nth-of-type(3) {
+  text-align: left;
+  font-weight: 700;
+  font-size: x-small;
+  padding-left: 20px;
+  margin-bottom: 0px;
+}
+
+.divider {
+  border-top: 1px dashed #ccc;
+  margin: 10px 20px;
+}
+
+.receipt-top-divider-content {
+  padding-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  text-align: left;
+  font-weight: 700;
+  font-style: normal;
+  font-size: small;
+  text-transform: uppercase;
+}
+
+.receipt-top-divider-content div:nth-child(3) {
+  margin-left: auto; /* Push AMT to the far right */
+  padding-right: 35px;
+}
+
+.receipt-items > div {
+  padding-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  text-align: left;
+  font-weight: 700;
+  font-style: normal;
+  font-size: small;
+  text-transform: uppercase;
+}
+
+.receipt-items span {
+  display: block;
   margin: 0;
   padding: 0;
+  flex: 1;
+  opacity: 1;
 }
+
+.receipt-items span:nth-child(1) {
+  text-align: left;
+  max-width: 20px; /* QTY alignment */
+}
+
+.receipt-items span:nth-child(2) {
+  text-align: left; /* ITEM alignment */
+}
+
+.receipt-items span:nth-child(3) {
+  text-align: right; /* AMT alignment */
+  max-width: 20px;
+  padding-right: 40px;
+}
+.receipt-summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: small;
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.receipt-summary div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.receipt-summary span {
+  opacity: 1;
+  text-align: right;
+  margin-right: 20px;
+}
+
+.recipient-details {
+  font-weight: 700;
+  font-size: x-small;
+  margin-top: 10px;
+  padding-left: 20px;
+  text-transform: uppercase;
+}
+
+.qr-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  font-weight: 700;
+  font-size: x-small;
+  margin-top: 20px;
+
+  text-transform: uppercase;
+}
+
+.qr-code {
+  width: 80px;
+  margin-top: 10px;
+}
+
 .receipt-top {
   position: absolute;
   top: -26px;
   width: 300px;
   height: 30px;
   margin-bottom: 100px;
-  background: linear-gradient(-45deg, white 12px, transparent 5%),
-    linear-gradient(45deg, white 12px, transparent 0%);
+  background: linear-gradient(-45deg, #f7f7f7 12px, transparent 5%),
+    linear-gradient(45deg, #f7f7f7 12px, transparent 0%);
   background-size: 24px;
   margin: 0;
 }
@@ -527,8 +663,8 @@ h3 {
   bottom: -26px;
   width: 300px;
   height: 30px;
-  background: linear-gradient(-135deg, white 12px, transparent 5%),
-    linear-gradient(135deg, white 12px, transparent 0%);
+  background: linear-gradient(-135deg, #f7f7f7 12px, transparent 5%),
+    linear-gradient(135deg, #f7f7f7 12px, transparent 0%);
   background-size: 24px;
   margin: 0;
 }
