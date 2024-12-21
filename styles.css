@@ -293,24 +293,24 @@ span {
   opacity: 0;
 }
 
-#projects {
+/* #projects {
   margin: 2rem;
   padding: 2rem;
 }
 
 .projects-container {
-  /* background-color: pink; */
+  background-color: pink;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   position: relative;
-}
+} */
 
-.project-card {
-  /* position: absolute; */
-  /* remove later down one */
-  /* position: relative; */
+/*.project-card {
+   position: absolute; 
+  remove later down one 
+  position: relative; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -348,8 +348,8 @@ span {
 }
 
 .project-1 {
-  /* position: relative; */
-  /* position: absolute; remove later*/
+  /* position: relative; 
+  /* position: absolute; remove later
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   background-color: #ebe5c9;
@@ -393,19 +393,13 @@ span {
   border: 0;
   outline: 0;
   background: transparent;
-  /* color: mediumblue; */
-  /* font-family: "Handlee", cursive; */
   font-weight: lighter;
   font-size: 16px;
   box-sizing: border-box;
   z-index: 1;
-}
+} 
 
-/* .project-1 .card-title {
-  margin-bottom: 20px;
-} */
-
-.project-2 {
+/* .project-2 {
   background-color: whitesmoke;
   color: black;
   display: flex;
@@ -484,6 +478,105 @@ h3 {
 
 .project-3 h3 {
   margin-top: 20px;
+} */
+
+.grid-container {
+  margin: 0;
+  padding: 0;
+}
+
+.grid-container {
+  height: 30px;
+  background-color: #f2ebe1;
+  background-image: linear-gradient(0deg, #efe1dd 1px, transparent 1px),
+    linear-gradient(90deg, #efe1dd 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+.box {
+  margin: 0;
+  padding: 0;
+  --size: 14px;
+  height: 30px;
+
+  background: radial-gradient(var(--size) at 50% 0px, #0000 99%, #f0aeb5 101%)
+    50% var(--size) / calc(2 * var(--size)) 100% no-repeat;
+}
+
+.box {
+  background-repeat: repeat-x;
+}
+
+#projects {
+  padding: 40px 0;
+  background-color: #f0aeb5;
+
+  /* background-color: #d8e2dc; */
+}
+
+.project-header {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  color: #333333;
+  color: #4f3b47;
+  color: #9d8189;
+  /* color: #175197; */
+  /* color: #d4a1c2; */
+  margin-bottom: 40px;
+  margin-top: 0px;
+}
+
+.project-cards {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  gap: 60px;
+  margin-bottom: 60px;
+  padding: 0;
+  color: #9d8189;
+}
+
+.card {
+  width: 15%;
+  height: 200px;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 12px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #f6e6d7;
+  /* background-color: #ffe5d9;
+  background-color: #cdb4db;
+  background-color: #f9c8d2;
+  background-color: #d8e2dc;
+  background-color: #efe1dd; */
+  /* color: #333333; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.05); /* Hover effect: slight upward and scaling */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15); /* More prominent shadow on hover */
+}
+
+.project-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+  color: #5f4b66;
+  color: #f4acb7;
+  color: #9d8189;
+}
+
+.project-description {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #555;
+  color: #8e7e8e;
+  color: #7f8c8d;
+  color: #9d8189;
 }
 
 .paper-clip {
@@ -736,33 +829,6 @@ h3 {
   color: #175197;
   text-align: center;
   z-index: 2;
-} */
-
-/* .grid-container {
-  margin: 0;
-  padding: 0;
-}
-
-.grid-container {
-  height: 30px;
-  background-color: #f2ebe1;
-  background-image: linear-gradient(0deg, #efe1dd 1px, transparent 1px),
-    linear-gradient(90deg, #efe1dd 1px, transparent 1px);
-  background-size: 30px 30px;
-} */
-
-/* .box {
-  margin: 0;
-  padding: 0;
-  --size: 14px;
-  height: 30px;
-
-  background: radial-gradient(var(--size) at 50% 0px, #0000 99%, #f8bdbe 101%)
-    50% var(--size) / calc(2 * var(--size)) 100% no-repeat;
-}
-
-.box {
-  background-repeat: repeat-x;
 } */
 
 /* .project-2 {
