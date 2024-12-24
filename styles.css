@@ -298,10 +298,23 @@ span {
     grid-template-rows: repeat(4, 1fr);
   }
 
-  #projects.card {
-    width: 10px;
-    height: 10px;
-    font-size: 14px;
+  #projects .card {
+    width: 150px;
+    height: 150px;
+  }
+
+  #projects .card.angle1,
+  #projects .card.angle3,
+  #projects .card.angle6,
+  #projects .card.angle8 {
+    font-size: 22px;
+  }
+
+  #projects .card.angle1 h3,
+  #projects .card.angle3 h3,
+  #projects .card.angle6 h3,
+  #projects .card.angle8 h3 {
+    padding-right: 40px;
   }
 }
 
@@ -589,6 +602,8 @@ h3 {
   font-family: "Montserrat", serif;
   /* font-family: "Fraunces", serif; */
   font-size: x-large;
+  font-size: 24px;
+  font-size: 13px;
   background-color: #f9cccc;
   background-color: #e2b5b6;
   color: #971723;
