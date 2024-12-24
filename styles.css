@@ -284,13 +284,13 @@ span {
   }
 
   .h1-top {
-    font-size: 2rem;
-    top: -100px;
-    left: 80px;
+    font-size: 6rem;
+    left: 84px;
   }
 
   .h1-bottom {
-    font-size: 2rem;
+    font-size: 6rem;
+    top: -80px;
   }
 }
 
