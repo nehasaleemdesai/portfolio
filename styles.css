@@ -292,6 +292,17 @@ span {
     font-size: 6rem;
     top: -80px;
   }
+
+  #projects .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  #projects.card {
+    width: 10px;
+    height: 10px;
+    font-size: 14px;
+  }
 }
 
 /* #projects {
