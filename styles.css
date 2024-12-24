@@ -511,7 +511,7 @@ h3 {
 }
 
 #projects {
-  background-color: #f8f5f1;
+  /* background-color: #f8f5f1; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -529,7 +529,6 @@ h3 {
 .card {
   width: 200px;
   height: 200px;
-  background-color: #fff;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.06);
   border-radius: 10px;
   display: flex;
@@ -541,6 +540,125 @@ h3 {
   text-align: center;
   transform-origin: center;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card.angle1 {
+  font-family: "Montserrat", serif;
+  /* font-family: "Fraunces", serif; */
+  font-size: x-large;
+  background-color: #cbdce9;
+  background-color: #638ec3;
+  background-color: #9dadcb;
+  color: whitesmoke;
+}
+
+.card.angle1 h3 {
+  line-height: 25px;
+  padding-right: 60px;
+  width: 100px;
+  text-align: left;
+}
+
+.card.angle2 {
+  font-family: "Lora", serif;
+  font-size: small;
+  background-color: #fcc38e;
+  color: #fbf9ed;
+}
+
+.card.angle2 h3 {
+  text-align: center;
+}
+
+.card.angle3 {
+  font-family: "Montserrat", serif;
+  /* font-family: "Fraunces", serif; */
+  font-size: x-large;
+  background-color: #f9cccc;
+  background-color: #e2b5b6;
+  color: #971723;
+  color: #df664a;
+}
+
+.card.angle3 h3 {
+  line-height: 25px;
+  padding-right: 60px;
+  width: 100px;
+  text-align: left;
+}
+
+.card.angle4 {
+  font-family: "Lora", serif;
+  background-color: #b5664e;
+  color: #f5f1ee;
+  font-size: small;
+}
+
+.card.angle4 h3 {
+  text-align: center;
+}
+
+.card.angle5 {
+  font-family: "Lora", serif;
+  font-weight: 200;
+}
+
+.card.angle5 h3 {
+  text-align: center;
+}
+
+.card.angle6 {
+  font-family: "Lora", serif;
+  background-color: #afb27a;
+  color: #e3dcd7;
+  font-size: small;
+}
+
+.card.angle6 h3 {
+  text-align: center;
+}
+
+.card.angle7 {
+  font-family: "Montserrat", serif;
+  /* font-family: "Fraunces", serif; */
+  background-color: #d4ccd4;
+  background-color: #d9cadf;
+  color: #fbf3e4;
+  color: #746c74;
+  color: #bbaa59;
+  font-size: x-large;
+}
+
+.card.angle7 h3 {
+  line-height: 25px;
+  padding-right: 60px;
+  width: 100px;
+  text-align: left;
+}
+
+.card.angle8 {
+  font-family: "Lora", serif;
+  background-color: #d4ccbc;
+  columns: #5d744f;
+  font-size: small;
+}
+
+.card.angle8 h3 {
+  text-align: center;
+}
+.card.angle9 {
+  font-family: "Montserrat", serif;
+  /* font-family: "Fraunces", serif; */
+  background-color: #9dadcb;
+  color: whitesmoke;
+  font-size: x-large;
+}
+
+.card.angle9 h3 {
+  line-height: 25px;
+  padding-right: 60px;
+  width: 100px;
+  text-align: left;
 }
 
 .angle1 {
