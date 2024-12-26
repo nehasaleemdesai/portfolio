@@ -34,32 +34,67 @@ setTimeout(() => {
 
 // window.addEventListener("load", rotateFlowers);
 
-const projectCards = document.querySelectorAll(".project-card");
+// const projectCards = document.querySelectorAll(".project-card");
 
-projectCards.forEach((card) => {
-  card.addEventListener("mousedown", startDrag);
+// projectCards.forEach((card) => {
+//   card.addEventListener("mousedown", startDrag);
 
-  function startDrag(event) {
-    const block = event.target;
-    let offsetX = event.clientX - block.offsetLeft;
-    let offsetY = event.clientY - block.offsetTop;
+//   function startDrag(event) {
+//     const block = event.target;
+//     let offsetX = event.clientX - block.offsetLeft;
+//     let offsetY = event.clientY - block.offsetTop;
 
-    // Mouse move listener
-    function moveBlock(e) {
-      block.style.left = `${e.clientX - offsetX}px`;
-      block.style.top = `${e.clientY - offsetY}px`;
+//     Mouse move listener
+//     function moveBlock(e) {
+//       block.style.left = `${e.clientX - offsetX}px`;
+//       block.style.top = `${e.clientY - offsetY}px`;
+//     }
+
+//     Remove listeners on mouseup
+//     function stopDrag() {
+//       document.removeEventListener("mousemove", moveBlock);
+//       document.removeEventListener("mouseup", stopDrag);
+//     }
+
+//     // Attach mousemove and mouseup to the document
+//     document.addEventListener("mousemove", moveBlock);
+//     document.addEventListener("mouseup", stopDrag);
+//   }
+// });
+
+// projects section
+document.addEventListener("DOMContentLoaded", () => {
+  const projectSection = document.querySelector("#projects");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        projectSection.classList.add("visible");
+        observer.unobserve(entry.target); // Optional: stop observing once animation triggers
+      }
+    });
+  });
+
+  observer.observe(projectSection);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll("#projects .card");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    },
+    {
+      threshold: 0.2, // Trigger when 20% of the card is visible
     }
+  );
 
-    // Remove listeners on mouseup
-    function stopDrag() {
-      document.removeEventListener("mousemove", moveBlock);
-      document.removeEventListener("mouseup", stopDrag);
-    }
-
-    // Attach mousemove and mouseup to the document
-    document.addEventListener("mousemove", moveBlock);
-    document.addEventListener("mouseup", stopDrag);
-  }
+  cards.forEach((card) => observer.observe(card));
 });
 
 // display date on receipt
