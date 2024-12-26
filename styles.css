@@ -319,37 +319,52 @@ span {
   }
 
   .h1-top {
-    font-size: 6rem;
+    /* font-size: 6rem;
     top: -142px;
-    left: 42px;
+    left: 42px; */
+    font-size: 10rem;
+    left: 148px;
   }
 
   .h1-bottom {
-    font-size: 6rem;
+    /* font-size: 6rem;
     top: -88px;
-    right: 35px;
+    right: 35px; */
+    font-size: 10rem;
+    top: 22px;
+    right: 87px;
   }
 
   #text-container {
-    font-size: 16px;
+    /* font-size: 16px;
     top: 6px;
-    right: 17px;
+    right: 17px; */
+    font-size: 19px;
+    top: 135px;
+    right: 78px;
   }
 
   #top-flower-container {
-    top: -24px;
-    left: 116px;
+    /* top: -24px;
+    left: 116px; */
+
+    left: 275px;
   }
 
   #bottom-flower-container {
-    top: 40px;
-    right: 64px;
+    /* top: 40px;
+    right: 64px; */
+    top: 201px;
+    right: 150px;
   }
 
   .stamp {
-    width: 50px;
+    /* width: 50px;
     top: -10px;
-    left: 2px;
+    left: 2px; */
+    width: 80px;
+    top: 93px;
+    left: 84px;
   }
 
   #projects .card-grid {
