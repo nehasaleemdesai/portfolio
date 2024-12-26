@@ -323,7 +323,7 @@ span {
     top: -142px;
     left: 42px; */
     font-size: 8rem;
-    left: 200px;
+    left: 157px;
   }
 
   .h1-bottom {
@@ -331,8 +331,8 @@ span {
     top: -88px;
     right: 35px; */
     font-size: 8rem;
-    top: 6px;
-    right: 97px;
+    top: 7px;
+    right: 142px;
   }
 
   #text-container {
@@ -340,31 +340,31 @@ span {
     top: 6px;
     right: 17px; */
     font-size: 18px;
-    top: -8px;
-    right: 1px;
+    top: 230px;
+    right: 225px;
   }
 
   #top-flower-container {
     /* top: -24px;
     left: 116px; */
     top: 46px;
-    left: 303px;
+    left: 258px;
   }
 
   #bottom-flower-container {
     /* top: 40px;
     right: 64px; */
     top: 152px;
-    right: 141px;
+    right: 192px;
   }
 
   .stamp {
     /* width: 50px;
     top: -10px;
     left: 2px; */
-    width: 65px;
-    top: 54px;
-    left: 149px;
+    width: 60px;
+    top: 55px;
+    left: 110px;
   }
 
   #projects .card-grid {
