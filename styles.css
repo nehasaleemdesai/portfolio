@@ -133,7 +133,6 @@ body {
   /* background-image: linear-gradient(0deg, #efe1dd 1px, transparent 1px),
     linear-gradient(90deg, #efe1dd 1px, transparent 1px);
   background-size: 30px 30px; */
-
   z-index: 0;
 }
 
@@ -156,6 +155,16 @@ body {
   height: 500px;
 } */
 
+#text-container {
+  font-size: 32px;
+  font-weight: 700;
+  position: absolute;
+  top: 328px;
+  right: 550px;
+  color: #a663cc;
+  font-family: "Montserrat", serif;
+}
+
 .h1-top {
   font-size: 12rem;
   /* text-align: start; */
@@ -170,6 +179,7 @@ body {
   position: relative;
   top: -150px;
   left: 80px;
+  letter-spacing: -8px;
   /* z-index: 2; */
 }
 
@@ -183,6 +193,7 @@ body {
   font-family: "Courier Prime", serif;
   margin-top: 100px;
   z-index: 1;
+  letter-spacing: -8px;
   /* text-align: start; */
   /* width: 500px; */
   /* font-family: "Spicy Rice", serif; */
@@ -274,8 +285,28 @@ body {
   border-top-color: #f28db2; /* Light pink color for triangle */
 }
 
+#top-flower-container {
+  position: absolute;
+  top: -212px;
+  left: -729px;
+}
+
+#bottom-flower-container {
+  position: absolute;
+  top: -56px;
+  right: 148px;
+}
+
+.stamp {
+  position: absolute;
+  width: 100px;
+  top: 280px;
+  left: 470px;
+  transform: rotate(-15deg);
+}
+
 span {
-  opacity: 1;
+  opacity: 0;
 }
 
 @media (max-width: 480px) {
@@ -718,6 +749,18 @@ h3 {
 .card:hover {
   transform: rotate(0deg) scale(1.1);
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2), 0px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card.angle1 a {
+  color: whitesmoke;
+}
+
+.card.angle3 a {
+  color: #df664a;
+}
+
+.card.angle8 a {
+  color: whitesmoke;
 }
 
 /* #projects {

@@ -1,3 +1,17 @@
+const text = "hello there! i'm neha.";
+const container = document.getElementById("text-container");
+let index = 0;
+
+function printLetter() {
+  if (index < text.length) {
+    container.textContent += text.charAt(index);
+    index++;
+    setTimeout(printLetter, 100); // Adjust the delay as needed
+  }
+}
+
+printLetter();
+
 // rotate hero section flowers on load
 const petals = document.querySelectorAll(".petal");
 let angle = 0;
