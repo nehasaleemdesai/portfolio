@@ -159,8 +159,8 @@ body {
   font-size: 32px;
   font-weight: 700;
   position: absolute;
-  top: 328px;
-  right: 550px;
+  top: 167px;
+  right: 73px;
   color: #a663cc;
   font-family: "Montserrat", serif;
 }
@@ -177,7 +177,7 @@ body {
   font-style: normal; */
   color: #175197;
   position: relative;
-  top: -150px;
+  top: -110px;
   left: 80px;
   letter-spacing: -8px;
   /* z-index: 2; */
@@ -185,7 +185,7 @@ body {
 
 .h1-bottom {
   position: relative;
-  top: 40px;
+  top: 50px;
   right: 80px;
   font-size: 12rem;
   color: #175197;
@@ -287,21 +287,21 @@ body {
 
 #top-flower-container {
   position: absolute;
-  top: -212px;
-  left: -729px;
+  top: 100px;
+  left: 235px;
 }
 
 #bottom-flower-container {
   position: absolute;
-  top: -56px;
+  top: 220px;
   right: 148px;
 }
 
 .stamp {
   position: absolute;
   width: 100px;
-  top: 280px;
-  left: 470px;
+  top: 130px;
+  left: -1px;
   transform: rotate(-15deg);
 }
 
@@ -309,7 +309,7 @@ span {
   opacity: 0;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   body {
     background-size: 15px 15px;
   }
