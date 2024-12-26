@@ -315,7 +315,7 @@ span {
   }
 
   .hero-content {
-    transform: scale(0.6);
+    transform: scale(0.8);
   }
 
   .h1-top {
@@ -831,7 +831,7 @@ h3 {
 
 @media (max-width: 768px) {
   #projects {
-    transform: scale(0.7);
+    transform: scale(0.8);
   }
 
   #projects h2 {
@@ -1191,7 +1191,7 @@ h3 {
     top: 0;
   }
   .skills-content {
-    transform: scale(0.6);
+    transform: scale(0.8);
   }
 
   .skills-message {
