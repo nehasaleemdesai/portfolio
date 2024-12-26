@@ -315,7 +315,7 @@ span {
   }
 
   .hero-content {
-    transform: scale(0.8);
+    transform: scale(0.9);
   }
 
   .h1-top {
@@ -831,7 +831,7 @@ h3 {
 
 @media (max-width: 768px) {
   #projects {
-    transform: scale(0.8);
+    transform: scale(0.9);
   }
 
   #projects h2 {
