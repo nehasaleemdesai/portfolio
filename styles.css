@@ -316,6 +316,7 @@ span {
 
   .hero-content {
     transform: scale(1);
+    left: -10px;
   }
 
   .h1-top {
