@@ -785,9 +785,9 @@ h3 {
 }
 
 @media (max-width: 768px) {
-  #projects {
+  /* #projects {
     transform: scale(0.9);
-  }
+  } */
 
   #projects h2 {
     width: 550px;
@@ -797,16 +797,17 @@ h3 {
 }
 
 #projects {
+  background-color: #f0aeb5;
   position: relative;
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+  opacity: 1;
+  /* transform: translateY(50px); */
+  /* transition: opacity 0.8s ease, transform 0.8s ease; */
 }
 
-#projects.visible {
+/* #projects.visible {
   opacity: 1;
   transform: translateY(0);
-}
+} */
 
 #projects.card {
   opacity: 0;
@@ -974,7 +975,7 @@ h3 {
   display: inline-block;
 } */
 
-/* .grid-container {
+#projects .grid-container-one {
   height: 30px;
   background-color: #f2ebe1;
   background-image: linear-gradient(0deg, #efe1dd 1px, transparent 1px),
@@ -993,13 +994,13 @@ h3 {
 
 .box.one {
   background-repeat: repeat-x;
-} */
+}
 
-.grid-container {
+.grid-container-second {
   height: 30px;
-  background-color: #f2ebe1;
-  background-image: linear-gradient(0deg, #efe1dd 1px, transparent 1px),
-    linear-gradient(90deg, #efe1dd 1px, transparent 1px);
+  background-color: #f0aeb5;
+  background-image: linear-gradient(0deg, #efe1dd 1px, transparent 1px);
+  /* linear-gradient(90deg, #efe1dd 1px, transparent 1px); */
   background-size: 30px 30px;
 }
 .box.two {

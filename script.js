@@ -63,20 +63,20 @@ setTimeout(() => {
 // });
 
 // projects section
-document.addEventListener("DOMContentLoaded", () => {
-  const projectSection = document.querySelector("#projects");
+// document.addEventListener("DOMContentLoaded", () => {
+//   const projectSection = document.querySelector("#projects");
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        projectSection.classList.add("visible");
-        observer.unobserve(entry.target); // Optional: stop observing once animation triggers
-      }
-    });
-  });
+//   const observer = new IntersectionObserver((entries) => {
+//     entries.forEach((entry) => {
+//       if (entry.isIntersecting) {
+//         projectSection.classList.add("visible");
+//         observer.unobserve(entry.target);
+//       }
+//     });
+//   });
 
-  observer.observe(projectSection);
-});
+//   observer.observe(projectSection);
+// });
 
 document.addEventListener("DOMContentLoaded", () => {
   const cards = document.querySelectorAll("#projects .card");
