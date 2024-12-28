@@ -1302,7 +1302,7 @@ h3 {
 
 @media (max-width: 600px) {
   .skills-wrapper {
-    height: 15vh;
+    height: 80vh;
     transform: scale(0.7);
     flex-direction: column;
   }
@@ -1319,7 +1319,7 @@ h3 {
   }
 
   #skills {
-    height: 70vh;
+    height: 86vh;
   }
 
   /* .skills-header {
