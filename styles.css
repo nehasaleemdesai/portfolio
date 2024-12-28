@@ -637,7 +637,7 @@ h3 {
   align-items: center;
   height: 100vh;
   min-height: 70%;
-  margin: 20px;
+  /* margin: 20px; */
   /* border-radius: 20px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.06); */
 }
@@ -1319,7 +1319,7 @@ h3 {
   }
 
   #skills {
-    height: 86vh;
+    height: 100vh;
   }
 
   /* .skills-header {
