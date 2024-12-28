@@ -97,6 +97,65 @@ document.addEventListener("DOMContentLoaded", () => {
   cards.forEach((card) => observer.observe(card));
 });
 
+// skills section
+
+// document.addEventListener("DOMContentLoaded", () => {
+//   const skills = document.querySelector("#skills");
+//   const skillsContent = document.querySelector(".skills-content");
+
+//   const observer = new IntersectionObserver(
+//     (entries) => {
+//       entries.forEach((entry) => {
+//         if (entry.isIntersecting) {
+//           if (entry.target === skills) {
+//             skills.classList.add("visible");
+//           }
+//           if (entry.target === skillsContent) {
+//             skillsContent.classList.add("visible");
+//           }
+//         }
+//       });
+//     },
+//     {
+//       threshold: 0.5,
+//     }
+//   );
+
+//   observer.observe(skills);
+//   observer.observe(skillsContent);
+// });
+
+// Function to detect when the section is in view and apply the "visible" class
+// const skillsSection = document.querySelector("#skills");
+// const skillsContent = document.querySelector(".skills-content");
+
+// const onScroll = () => {
+
+//   const rect = skillsSection.getBoundingClientRect();
+
+//   if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+//     skillsSection.classList.add("visible");
+//     skillsContent.classList.add("visible");
+//   }
+// };
+
+// window.addEventListener("scroll", onScroll);
+
+window.addEventListener("scroll", function () {
+  const skillsSection = document.querySelector("#skills");
+
+  // Get position of the skills section relative to viewport
+  const skillsTop = skillsSection.getBoundingClientRect().top;
+  const skillsHeight = skillsSection.clientHeight;
+
+  // Reveal skills section when it's within view
+  if (skillsTop <= window.innerHeight && skillsTop + skillsHeight >= 0) {
+    skillsSection.classList.add("visible");
+  } else {
+    skillsSection.classList.remove("visible");
+  }
+});
+
 // display date on receipt
 const currentDate = new Date();
 const day = currentDate.toLocaleString("en-US", { weekday: "long" });
