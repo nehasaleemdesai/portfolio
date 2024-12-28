@@ -1303,7 +1303,7 @@ h3 {
 @media (max-width: 600px) {
   .skills-wrapper {
     height: 80vh;
-    transform: scale(0.7);
+    /* transform: scale(0.7); */
     flex-direction: column;
   }
   .skills {
