@@ -1303,17 +1303,17 @@ h3 {
 
 @media (max-width: 600px) {
   .skills-wrapper {
-    /* transform: scale(0.7); */
+    transform: scale(0.7);
     flex-direction: column;
-    padding: 50px 20px;
+    padding: 0px;
   }
   .skills {
     left: 0%;
     top: 0;
   }
-  .skills-content {
+  /* .skills-content {
     transform: scale(0.2);
-  }
+  } */
 
   .logo i {
     font-size: 60px;
