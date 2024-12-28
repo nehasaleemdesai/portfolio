@@ -1316,6 +1316,10 @@ h3 {
     font-size: 60px;
   }
 
+  #skills {
+    padding: 0px;
+  }
+
   /* .skills-header {
     transform: scale(0.6);
   } */
