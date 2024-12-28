@@ -1038,7 +1038,8 @@ h3 {
   justify-content: center;
   align-items: flex-start;
   width: 700px;
-  height: 500px;
+  /* height: 500px; */
+  height: 350;
   margin: 0px;
   padding: 0px;
   transform: translateY(20px);
