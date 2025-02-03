@@ -1281,7 +1281,7 @@ h3 {
 
 .receipt-top {
   position: absolute;
-  top: -26px;
+  top: -27px;
   width: 300px;
   height: 30px;
   margin-bottom: 100px;
@@ -1293,7 +1293,7 @@ h3 {
 
 .receipt-bottom {
   position: absolute;
-  bottom: -26px;
+  bottom: -27px;
   width: 300px;
   height: 30px;
   background: linear-gradient(-135deg, #f7f7f7 12px, transparent 5%),
